@@ -151,6 +151,7 @@ public class TriggerBot extends Module {
 
 	@EventHandler
 	private void onTick(Render3DEvent event) {
+		if (mc.player.isUsingItem()) return;
 		if (!mc.player.isAlive() || PlayerUtils.getGameMode() == GameMode.SPECTATOR) return;
 		if (mc.targetedEntity == null) return;
 
