@@ -163,3 +163,4 @@ public class TriggerBot extends Module {
 		mc.player.swingHand(Hand.MAIN_HAND);
 	}
 }
+ 
